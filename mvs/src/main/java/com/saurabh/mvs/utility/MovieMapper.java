@@ -1,11 +1,15 @@
-package com.saurabh.mvs.dto;
+package com.saurabh.mvs.utility;
 
+import com.saurabh.mvs.dto.MovieDTO;
+import com.saurabh.mvs.dto.ReviewDTO;
 import com.saurabh.mvs.entity.Movie;
 import com.saurabh.mvs.entity.Review;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class MovieMapper {
 
     public MovieDTO toMovieDTO(Movie movie) {
